@@ -9,7 +9,4 @@ This project contains automated test cases for the Singlish to Sinhala Translato
 - Failed: 9  
 - Browser Used: Chromium
 
-## How to Run
-1. npm install  
-2. npx playwright test  
-3. npx playwright show-report
+
