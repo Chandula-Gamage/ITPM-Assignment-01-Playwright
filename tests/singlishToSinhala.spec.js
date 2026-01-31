@@ -162,55 +162,55 @@ test.describe('IT3040 – SwiftTranslator Automation', () => {
 
   // ================= NEGATIVE FUNCTIONAL TESTS (9 FAIL – INTENTIONAL) =================
 
-  test('Neg_Fun_0027 – Symbols only input', async ({ page }) => {
+  test('Neg_Fun_0001 – Symbols only input', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('@@@@@@');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0028 – Numbers only input', async ({ page }) => {
+  test('Neg_Fun_0002 – Numbers only input', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('123456');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0029 – Random characters', async ({ page }) => {
+  test('Neg_Fun_0003 – Random characters', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('asdfghjkl');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0030 – Mixed symbols and numbers', async ({ page }) => {
+  test('Neg_Fun_0004 – Mixed symbols and numbers', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('123@@@');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0031 – Uppercase input', async ({ page }) => {
+  test('Neg_Fun_0005 – Uppercase input', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('HELLO');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0032 – Hash symbols input', async ({ page }) => {
+  test('Neg_Fun_0006 – Hash symbols input', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('#####');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0033 – Special characters', async ({ page }) => {
+  test('Neg_Fun_0007 – Special characters', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('#$%^&*');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0034 – Empty input', async ({ page }) => {
+  test('Neg_Fun_0008 – Empty input', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('');
     await expect(false).toBe(true);
   });
 
-  test('Neg_Fun_0035 – Long meaningless text', async ({ page }) => {
+  test('Neg_Fun_0009 – Long meaningless text', async ({ page }) => {
     await page.goto('https://www.swifttranslator.com/');
     await page.locator('textarea').fill('asdf qwer zxcv poi lkjh');
     await expect(false).toBe(true);
